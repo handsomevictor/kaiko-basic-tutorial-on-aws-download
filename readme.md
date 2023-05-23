@@ -28,3 +28,11 @@ Reminder:
    the script. Please contact zhenning.li@kaiko.com
 2. The download_from_aws.py script will automatically create a folder to store all the data downloaded, in the same
    structure as they are in S3 bucket.
+
+# Use Cronjob to schedule the download (run the script automatically every day or every hour etc)
+Steps or recommendations:
+1. Open vitrual machine or local machine, and run "crontab -e" to edit the cronjob
+2. Write the commands in the file opened by "crontab -e", for example:
+   0 0 * * * python3 /home/download_from_aws.py
+   This command means that the script will be run every day at 00:00
+   For more info on how to use cron, please find: https://crontab.guru/
