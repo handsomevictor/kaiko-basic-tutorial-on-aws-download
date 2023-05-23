@@ -17,7 +17,7 @@ This command downloads all csv files of date 2023-05-20.
 Please refer to the file: download_from_aws.py and run main.py when you want to download anything.
 
 [Alert] The overall logic is like this:
-1. Establish connection to your AWS account
+1. Establish connection to your AWS account by using "boto3" module and "resource" or "client" function 
 2. (If you have the full path of the files wanted, ignore this step) Use the function "cli.list_objects_v2(**kwargs)"
    to list all files in your S3 bucket, and save the names that you want to download in a txt file
 3. Read the txt file created in Step 2 and download all files in the list by iterating through the list. In my script
