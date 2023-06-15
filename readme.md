@@ -1,3 +1,9 @@
+> **Disclaimer:** Li wrote this script as an open-source resource. While anyone can use it, please note that Li 
+> does not assume any responsibility for any issues or damages that may arise from its use. 
+> Use the script at your own risk and exercise caution.
+> Contact: zhenning.li@kaiko.com
+
+
 Basic AWS Cli commands:
 
 # AWS CLI: Download all files of some date from S3 bucket to local:
@@ -29,7 +35,7 @@ Reminder:
 2. The download_from_aws.py script will automatically create a folder to store all the data downloaded, in the same
    structure as they are in S3 bucket.
 
-# Use Cronjob to schedule the download (run the script automatically every day or every hour etc)
+# Use Cronjob to schedule the download (run the script automatically every day or every hour etc.)
 Steps or recommendations:
 1. Open vitrual machine or local machine, and run "crontab -e" to edit the cronjob
 2. Write the commands in the file opened by "crontab -e", for example:
